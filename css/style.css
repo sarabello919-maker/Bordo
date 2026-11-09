@@ -629,6 +629,24 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
+/* Regola specifica per dispositivi mobili */
+@media (max-width: 991px) {
+    .card-recensione {
+        height: auto !important; /* Lascia che la card si adatti in altezza su mobile */
+        min-height: unset !important;
+        padding: 20px !important;
+    }
+    
+    .icon-circle {
+        width: 45px !important;
+        height: 45px !important;
+        min-width: 45px !important;
+        flex-shrink: 0 !important;
+        margin: 0 auto 12px auto !important; /* Posiziona l'icona dentro i bordi della card senza tagliarla */
+    }
+}
+
+
 
 /*------------------------------------chiude main---------------------------------------------------------------*/
 
