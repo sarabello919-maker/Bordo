@@ -401,15 +401,23 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: #111;
 }
 
-.foto-grande {
+.foto-pizza-sezione {
     width: 100% !important;
-    max-width: 500px !important; /* Aumenta notevolmente la larghezza massima */
-    height: 480px !important;    /* Dà un'altezza importante e verticale */
-    object-fit: cover !important; /* Riempie lo spazio senza distorcere */
+    max-width: 500px !important;
+    height: 480px !important; /* Ottimizzata per desktop */
+    object-fit: cover !important;
     object-position: center !important;
     border-radius: 12px;
 }
 
+/* Regola specifica per dispositivi mobili */
+@media (max-width: 991px) {
+    .foto-pizza-sezione {
+        height: auto !important;
+        aspect-ratio: 4 / 3 !important; /* Mantiene la foto proporzionata e ben visibile */
+        max-width: 100% !important;
+    }
+}
 
 .sezione-pizza,
 .sezione-locali{
