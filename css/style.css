@@ -646,6 +646,24 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 }
 
+/* Impedisce al contenitore delle slide di saltare su desktop */
+.carousel-inner {
+    overflow: hidden;
+    position: relative;
+    min-height: 280px; 
+}
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Regola specifica per dispositivi mobili per evitare il salto */
+@media (max-width: 991px) {
+    .carousel-inner {
+        min-height: 380px !important; /* Aumenta l'altezza minima su mobile perché il testo va su più righe */
+    }
+}
+
 
 
 /*------------------------------------chiude main---------------------------------------------------------------*/
