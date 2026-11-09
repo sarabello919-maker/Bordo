@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordo | Pizza e Fritti | Roma</title>
+    <meta name="description" content="Consulta il menu di Bordo e scopri la nostra pizza romana, i fritti artigianali e i dolci nei locali di Roma.">  
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script defer src="script/script.js"></script>
+</head>
+
+<body class="inner-menu">
+    <header id="top">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/marchio.png" alt="" class="Marchio">
+                <img src="img/logo.png" alt="Logo Pizzeria Bordo">
+            </a> 
+        </div>
+
+        <!-- HAMBURGER -->
+        <button class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html#top">Home</a></li> 
+                <li><a href="menu.html">Menù</a></li>
+                <li><a href="index.html#chisiamo">Chi siamo</a></li>
+                <li><a href="index.html#asporto">Info asporto</a></li>
+                <li><a href="index.html#sedi">Le nostre sedi</a></li>
+
+                <li>
+                    <div class="dropdown">
+                        <input type="checkbox" id="dropdown-toggle">
+                        <label for="dropdown-toggle" class="dropdown-btn rounded-4">
+                            Prenota un tavolo
+                        </label>
+                        <ul class="dropdown-menu">
+                            <li><a href="tel:063911234567">Pizzeria Testaccio</a></li>
+                            <li><a href="tel:063936111213">Pizzeria San Giovanni</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CONTENITORE UNICO PER SFONDO NERO -->
+        <div class="sfondo-menu">
+
+            <div class="pizza-illustrazione">
+                <img src="img/Illustrazione.pizza.png" alt="illustrazione di una fetta di pizza">
+            </div>
+
+            <div class="hero-menu py-3 mt-3">
+                <h1 class="fs-4 text-secondary">Il nostro menu</h1>
+                <p class="fs-1 text-black">Da Testaccio a San Giovanni</p>
+            </div>
+
+            <div class="nav-piatti text-uppercase">
+                <nav>
+                    <ul>
+                        <li><a href="#fritto">I Fritti</a></li>
+                        <li><a href="#classiche">Pizze classiche</a></li>
+                        <li><a href="#bordo">Speciali bordo</a></li>
+                        <li><a href="#bevande">Bevande</a></li>
+                        <li><a href="#birre">Birre</a></li>
+                        <li><a href="#dolci">Dolci</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div> <!-- CHIUDE .sfondo-menu -->
+
+
+     <div id="fritto" class="container py-5 dish">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                    <h2 class="fw-bold fs-3 text-uppercase  text-warning pt-5">
+                        I Fritti
+                    </h2>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-5">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Supplì al telefono
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Ragù di carne e pomodoro, con cuore filante di mozzarella fiordilatte
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 3,00
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Supplì alla carbonara
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Crema d'uovo, guanciale e Pecorino Romano DOP, con cuore filante di fior di latte
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 4,00
+                        </p>
+                    </div>
+                </div>
+
+                
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Crocchè classico
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                          Crocchetta di patate con Parmigiano e cuore filante di fior di latte
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 4,00
+                        </p>
+                    </div>
+                </div>
+
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                           Crocchè alla romana
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                            Crocchetta di patate, crema di pecorino, guanciale e pepe nero
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 4,50
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Fiore di Zucca
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Fritto in pastella con ripieno di alici e mozzarella fior di latte filante
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 4,50
+                        </p>
+                    </div>
+                </div>
+
+            
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                           Filetto di baccalà
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                          Filetto di baccalà dissalato e fritto in pastella dorata e croccante
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 5,00
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                          Patate fritte artigianali
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                          Patate fresche tagliate a mano e fritte al momento, con sale rosa dell'Himalaya
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 3,00
+                        </p>
+                    </div>
+                </div>
+            </div><!------Chiude col-lg-8--------------> 
+        </div><!------Chiude row--------------> 
+    </div><!----------Chiude container-fluid------------->
+<!----------------------------------------------------------------------------------------------------------------------------------> 
+
+     <div id="classiche" class="container py-5 dish">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                    <h2 class="fw-bold fs-3 text-uppercase text-warning pt-5">
+                        Pizze classiche
+                    </h2>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-5">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Margherita
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Salsa di pomodoro, fiordilatte, basilico e olio EVO
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 5,50
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Marinara
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Salsa di pomodoro, aglio, origano e olio EVO
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 5,00
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Diavola
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Salsa di pomodoro, fiordilatte, salame piccante, basilico e olio EVO
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 6,00
+                        </p>
+                    </div>
+                </div>
+
+                
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Fiori e alici
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Fiordilatte, alici, fiori di zucca, origano e olio EVO
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 8,00
+                        </p>
+                    </div>
+                </div>
+
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Salsiccia e cicoria
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Fiordilatte, salsiccia romana, cicoria ripassata, basilico e olio EVO
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 8,50
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Ortolana
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Fiordilatte, peperoni, zucchine, melanzane, provola, basilico e olio EVO
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 7,00
+                        </p>
+                    </div>
+                </div>
+
+            
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Capricciosa
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                          Fiordilatte, prosciutto crudo, funghi champignon, carciofini, olive nere e olio Evo
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 8,50
+                        </p>
+                    </div>
+                </div>
+            </div><!------Chiude col-lg-8--------------> 
+        </div><!------Chiude row--------------> 
+    </div><!----------Chiude container-fluid------------->
+<!----------------------------------------------------------------------------------------------------------------------------------> 
+
+     <div id="bordo" class="container py-5 dish">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                    <h2 class="fw-bold fs-3 text-uppercase text-warning pt-5">
+                        Speciali bordo
+                    </h2>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-5">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Carboromana
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Fiordilatte, crema di tuorlo e pecorino, guanciale, pepe nero e olio EVO
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 11,00
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Amatriciana Gialla
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Pomodorino giallo del Piennolo, fior di latte, guanciale croccante, fonduta di Pecorino Romano DOP e pepe nero
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 12,00
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Bordo
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Fior di latte, porchetta artigianale di Ariccia IGP, patate al forno e scorza d'arancio 
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 13,00
+                        </p>
+                    </div>
+                </div>
+
+                
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                           Sottobosco Romano
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                          Fior di latte, crema di tartufo nero, salsiccia dei Castelli Romani e scaglie di pecorino stagionato a crudo
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 14,00
+                        </p>
+                    </div>
+                </div>
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Cacio, Pepe e Pera
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Fior di latte, fonduta di Pecorino Romano DOP, pere, granella di noci e pepe nero
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 13,00
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            La Suburra
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                           Crema di zucca, fior di latte, guanciale, provola affumicata e tarallo sbriciolato
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 13,00
+                        </p>
+                    </div>
+                </div>
+
+            </div><!------Chiude col-lg-8--------------> 
+        </div><!------Chiude row--------------> 
+    </div><!----------Chiude container-fluid------------->
+<!---------------------------------------------------------------------------------------------------------------------------------->  
+
+     <div id="bevande" class="container py-5 dish">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                    <h2 class="fw-bold fs-3 text-uppercase text-warning pt-5">
+                        Bevande
+                    </h2>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-5">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Acqua naturale vetro 75CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 2,00
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Acqua gassata vetro 75CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 2,50
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Coca-cola - Coca-cola zero  vetro 33CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 3,50
+                        </p>
+                    </div>
+                </div>
+
+                
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Pepsi cola - Pepsi zero vetro 33CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 3,50
+                        </p>
+                    </div>
+                </div>
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Fanta - Sprite vetro 33CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 3,00
+                        </p>
+                    </div>
+                </div>
+
+            </div><!------Chiude col-lg-8--------------> 
+        </div><!------Chiude row--------------> 
+    </div><!----------Chiude container-fluid------------->
+<!----------------------------------------------------------------------------------------------------------------------------------> 
+     <div id="birre" class="container py-5 dish">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                    <h2 class="fw-bold fs-3 text-uppercase text-warning pt-5">
+                        Birre
+                    </h2>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-5">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            IPA artigianale 33CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 4,50
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Baladin Isaac 33CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 4,50
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Tipopils 30/40CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 4,00/€ 5,50
+                        </p>
+                    </div>
+                </div>
+
+                
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Paulaner Weiss 30/50 CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 4,50/€ 6,00
+                        </p>
+                    </div>
+                </div>
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            FORST WEISS 30/50 CL
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 4,50/€ 6,00
+                        </p>
+                    </div>
+                </div>
+
+            </div><!------Chiude col-lg-8--------------> 
+        </div><!------Chiude row--------------> 
+    </div><!----------Chiude container-fluid------------->
+<!----------------------------------------------------------------------------------------------------------------------------------> 
+
+     <div id="dolci" class="container py-5 dish">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                    <h2 class="fw-bold fs-3 text-uppercase text-warning pt-5">
+                        Dolci
+                    </h2>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-5">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Tiramisù artigianale
+                        </p>
+
+                        <p class="m-0 text-black fs-5">
+                            Savoiardi al caffè, crema al mascarpone e spolverata di cacao amaro
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                            € 4,50
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                            Caprese al cioccolato
+                        </p>
+                        <p class="m-0 text-black fs-5">
+                           Torta al cioccolato e mandorle
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 5,00
+                        </p>
+                    </div>
+                </div>
+
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                           Crostata ricotta e visciole
+                        </p>
+                        <p class="m-0 text-black fs-5">
+                          Frolla friabile fatta in casa, crema di ricotta di pecora e confettura di visciole
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 6,00
+                        </p>
+                    </div>
+                </div>     
+                
+            <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                           Panna cotta artigianale
+                        </p>
+                        <p class="m-0 text-black fs-5">
+                          Delicata panna cotta fatta in casa con riduzione ai frutti di bosco o cioccolato fondente
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 6,00
+                        </p>
+                    </div>
+                </div>      
+
+             <!-- PIATTO -->
+
+                <div class="menu-item d-flex justify-content-between pt-4">
+
+                    <div class="menu-text">
+                        <p class="m-0 text-black fs-5 fw-bold">
+                           Calzone dolce alla Nutella
+                        </p>
+                        <p class="m-0 text-black fs-5">
+                          Impasto della nostra pizza, ripiena di crema alle nocciole e zucchero a velo
+                        </p>
+                    </div>
+
+                    <div class="menu-price fw-bold ms-4">
+                        <p class="m-0 text-black fs-5">
+                           € 8,00
+                        </p>
+                    </div>
+                </div> 
+
+
+            </div><!------Chiude col-lg-8--------------> 
+        </div><!------Chiude row--------------> 
+    </div><!----------Chiude container-fluid------------->
+</main><!-------------------------Chiude main------------------------------------------------------------------------->
+    
+   
+    <footer>
+            <p>Copyright © 2026 Bordo</p>
+            <p>P.IVA 01234567890</p>
+            <p>Tutti i diritti sono riservati.</p> 
+            <p>
+                <a href="">Privacy Policy</a>
+                            |
+                <a href="">Cookie Policy</a>
+            </p>
+
+            <p>
+                Seguici sui nostri canali social
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </p>
+                    
+<!-------------------------------------Crediti---------------------------------------------->     
+                    <hr>         
+        <div class="crediti">
+            <p>Questo sito fa parte di un portfolio ed è stato realizzato a puro scopo dimostrativo.</p>
+            <p>Le immagini sono utilizzate nel rispetto delle licenze di Magnific e Unsplash.</p>
+            <p>Image Credits | Foto di: </p>
+
+            <div class="gruppo-crediti">
+
+                <a href="https://www.magnific.com/it/foto-gratuito/crocchette-gustose-in-ciotola_20945256.htm#fromView=keyword&page=1&position=1&uuid=6be0938f-4075-4eda-987c-5f5dddec7489&track=ais_hybrid&query=Crocchette" target="_blank">Immagine di magnific</a>,
+
+                <a href="https://unsplash.com/it/@mitchel3uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Mitchell Luo</a>su<a href="https://unsplash.com/it/foto/un-cesto-di-patatine-fritte-seduto-sopra-un-tavolo-di-legno-ChXHveqrb28?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>,
+
+                <a href="https://unsplash.com/it/@mirkofabian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"target="_blank">Mirko Fabian</a> su <a href="https://unsplash.com/it/foto/una-pizza-con-broccoli-e-formaggio-BrC9TBAHGwg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"target="_blank">Unsplash</a>,
+
+                <a href="https://www.magnific.com/it/foto-gratuito/chef-in-uniforme-bianco-prepara-una-pizza_5911722.htm#fromView=keyword&page=1&position=22&uuid=5ab7362a-f3e7-4f48-bfde-15f4fd4ecfcc&track=ais_hybrid&query=Pizzaiolo+che+prepara+pizza" target="_blank">Immagine di prostooleh su Magnific</a>,
+            </div>
+            
+            <div class="gruppo-crediti">
+            
+                <a href="https://unsplash.com/it/@phototastyfood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">David Foodphototasty</a> su <a href="https://unsplash.com/it/foto/una-pizza-con-un-cucchiaio-DB0v9qJKQJw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>,
+
+                <a href="https://unsplash.com/it/@adhitya_2505?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Adhitya Sibikumar</a> su <a href="https://unsplash.com/it/foto/interno-moderno-del-ristorante-con-specchi-rotondi-e-luci-a-sospeso-Yxm90BYxq3E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>,
+
+                <a href="https://www.magnific.com/it/foto-gratuito/tavolo-da-pranzo-in-hotel-di-lusso_4692128.htm#fromView=search&page=5&position=15&uuid=328a1c9f-cd1c-4bb3-89f7-18509b237d98&track=ais_hybrid&query=ristoranti" target="_blank">Immagine di jcomp su Magnific</a>,
+
+
+            </div>
+                
+            <div class="gruppo-crediti">
+
+                <a href="https://www.magnific.com/it/foto-gratuito/crocchette-di-cibo-delizioso-ad-alto-angolo_20944290.htm#fromView=keyword&page=1&position=16&uuid=fcdd8664-d90a-4421-bcbb-d5b65410984c&track=ais_hybrid&query=Crocchette" target="_blank">Immagine di magnific</a>,
+
+                <a href="https://www.magnific.com/it/immagine-ia-gratis/fine-di-carta-di-struttura-in-su_410571017.htm#fromView=keyword&page=4&position=42&uuid=1ac8f8fd-95e3-4442-8b94-8d9d79bec2e8&track=ais_hybrid&query=Carta+millimetrata" target="_blank">Immagine di magnific</a>.
+            </div>
+        </div>
+
+        <!-------------------------Chiude crediti------------------------------------------------------------------------->
+
+        <span class="tornasu">
+                <a href="#top">
+                <i class="fa-solid fa-circle-chevron-up fs-1"></i>
+                </a> 
+        </span>
+
+    </footer>  
+ <!-------------------------Chiude footer------------------------------------------------------------------------->
+
+
+
+
+
+
+
+    
+</body>
+</html>

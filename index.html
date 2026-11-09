@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordo | Pizza Romana | Roma</title>
+    <meta name="description" content="Bordo unisce Roma in un’esperienza di gusto unica. Pizza sottile e croccante, tradizione, maestria e ingredienti di qualità.   Prenota il tuo tavolo.">   
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script defer src="script/script.js"></script>
+</head>
+
+<body>
+
+    <header id="top">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/marchio.png" alt="" class="Marchio">
+                <img src="img/logo.png" alt="Logo Pizzeria Bordo">
+            </a> 
+        </div>
+
+        <!-- HAMBURGER -->
+        <button class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html#top">Home</a></li> 
+                <li><a href="menu.html">Menù</a></li>
+                <li><a href="#chisiamo">Chi siamo</a></li>
+                <li><a href="#asporto">Info asporto</a></li>
+                <li><a href="#sedi">Le nostre sedi</a></li>
+
+                <li>
+                    <div class="dropdown">
+
+                        <input type="checkbox" id="dropdown-toggle">
+
+                        <label for="dropdown-toggle" class="dropdown-btn rounded-4">
+                            Prenota un tavolo
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="tel:063911234567">Pizzeria Testaccio</a>
+                            </li>
+
+                            <li>
+                                <a href="tel:063936111213">Pizzeria San Giovanni</a>
+                            </li>
+                        </ul>
+
+                </div>
+
+                </li>
+            </ul>
+        </nav>
+    </header><!-------------------------Chiude header------------------------------------------------------------------------->
+    
+
+<div class="sfondo-header position-relative overflow-hidden">
+
+    <!-- Slider per le foto di sfondo -->
+    <div id="headerCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner h-100">
+
+            
+            <div class="carousel-item h-100">
+                <img src="img/sfondo.crocchette.jpg" class="d-block object-fit-cover" alt="Locale San Giovanni">
+            </div>
+
+            <!-- Terza Slide -->
+            <div class="carousel-item h-100">
+                <img src="img/sfondo.patatine.jpg" class="d-block object-fit-cover" alt="Locale San Giovanni">
+            </div>
+
+            <!-- Terza Slide -->
+
+            <!-- Prima Slide -->
+            <div class="carousel-item active h-100">
+                <img src="img/sfondo.pizza.jpg" class="d-block object-fit-cover" alt="Locale Testaccio">
+            </div>
+        </div>
+    </div>
+
+    <!-- Velatura scura per far risaltare il testo -->
+    <div class="header-overlay"></div>
+
+    <!-- Testo, sottotitolo e pulsante posizionati nella zona nera (IMMUTATI) -->
+    <div class="hero-testo">
+        <h1 class="titolo text-uppercase">
+           Bordo <br>Fritti & Pizza</h1>
+        
+        
+        <!-- Bottone Scopri il Menu -->
+        <a href="menu.html" class="btn btn-warning fw-bold text-uppercase rounded-pill px-4 py-2 mt-4 dropdown-btn fs-4">
+            Scopri il menu
+            <i class="fa-solid fa-arrow-right fs-4"></i>
+        </a>
+    </div>
+</div>
+<!-------------------------Chiude sfondo e titolo------------------------------------------------------------------------->
+
+    <main>
+    <!-- Sezione Punti di Forza -->
+
+    <div class="rettangoli-sfondo py-3">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+
+            <!-- Riquadro 1: Forno a legna -->
+            <div class="col-12 col-lg-4">
+                <div class="p-4 h-100 rounded text-center card-scura-gialla">
+                    <div class="icon-circle mb-3">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <h3 class="text-white text-uppercase fw-bold fs-4 mb-3">
+                        Forno a Legna
+                    </h3>
+                    <p class="text-white m-0 fs-5">
+                        Cotta ad oltre 350°C per eliminare ogni traccia di umidità: la nostra pizza romana è un’esplosione di pura croccantezza ad ogni morso.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Riquadro 2: Ingredienti -->
+            <div class="col-12 col-lg-4">
+                <div class="p-4 h-100 rounded text-center card-scura-gialla">
+                    <div class="icon-circle mb-3">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-white text-uppercase fw-bold fs-4 mb-3">
+                        Ingredienti Locali
+                    </h3>
+                    <p class="text-white m-0 fs-5">
+                        Farina di grano tenero Tipo 0. Pomodoro di filiera, fior di latte fresco e le migliori eccellenze dell'Agro Romano e del Lazio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Riquadro 3: Lievitazione -->
+            <div class="col-12 col-lg-4">
+                <div class="p-4 h-100 rounded text-center card-scura-gialla">
+                    <div class="icon-circle mb-3">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                    </div>
+                    <h3 class="text-white text-uppercase fw-bold fs-4 mb-3">
+                        24/48h Lievitazione
+                    </h3>
+                    <p class="text-white m-0 fs-5">
+                        Dal mattarello alla pala: stendiamo l'impasto fino a renderlo una sfoglia sottile e leggera, come insegna la vera tradizione romana.
+                    </p>
+                </div>
+            </div>
+        </div>
+            </div><!-------------------------Chiude row1------------------------------------------------------------------------->
+        </div><!-------------------------Chiude container------------------------------------------------------------------------->
+
+    <!-------------------------Chiude sezione punti di forza------------------------------------------------------------------------>
+
+        <div class="chi-siamo py-5">
+            <div class="container">
+                <div class="row align-items-center" id="chisiamo">
+                    
+                    <!-- Colonna Testo (Larga 6) -->
+                    <div class="col-12 col-lg-6 text-start pe-lg-4 mb-4 mb-lg-0">
+                        <h2 class="text-warning fs-5 pb-1 text-uppercase fw-bold">Chi siamo</h2>
+                        <h3 class="fw-bold fs-2 pb-3">Sali a Bordo del gusto</h3>
+                        
+                        <p class="m-0 lh-base fs-5">
+                            <span class="d-block mb-3">
+                                Bordo nasce dal desiderio di portare in tavola l'autentica tradizione della pizza romana. Quello che era iniziato come un progetto mosso dalla pura passione, si è trasformato negli anni in una realtà consolidata e amata dai nostri clienti, che ritrovano nei nostri locali il gusto genuino delle origini.
+                            </span>
+                            <span class="d-block">
+                                Per noi, qualità e tradizione viaggiano sullo stesso binario: è proprio questa filosofia che ha decretato il successo del nostro brand, permettendoci di aprire il nostro secondo locale a Roma. Il nostro obiettivo è offrire non solo una pizza, ma un’esperienza: un momento di convivialità che richiama i sapori, i profumi e l’atmosfera tipica delle pizzerie di una volta.
+                            </span>
+                        </p>
+                    </div>
+
+                    <!-- Colonna Foto Grande e Allineata a Destra (Larga 6) -->
+                    <div class="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                        <img src="img/pizzaiolo.jpg" alt="Pizzaiolo della pizzeria Bordo con due pizze in mano" class="img-fluid rounded-3 shadow foto-grande">
+                    </div>
+
+                </div><!-------------------------Chiude row1------------------------------------------------------------------------->
+            </div><!-------------------------Chiude container------------------------------------------------------------------------->
+        </div>
+<!-------------------------Chiude sezione chi siamo------------------------------------------------------------------------>  
+
+ <div class="sezione-pizza py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <!-- Colonna Testo (Larga 6) -->
+                <div class="col-12 col-lg-6 text-start pe-lg-4 mb-4 mb-lg-0">
+                    <h2 class="text-warning fs-5 pb-1 text-uppercase fw-bold">La nostra pizza</h2>
+                    <h3 class="fw-bold fs-2 pb-3 text-dark">Bordo e Anima</h3>
+                    
+                    <p class="m-0 lh-base fs-5">
+                        <span class="d-block mb-3">
+                           Il bordo è la firma della nostra pizza, il dettaglio che ne dichiara la vera identità romana. Durante la cottura ad alta temperatura, la sfoglia dorata si asciuga alla perfezione, regalando quel margine sottile, fragrante e croccante che rende ogni morso inconfondibile.
+                        </span>
+                        <span class="d-block">
+                           Ma il nostro bordo non è soltanto tradizione: è anche il segno distintivo di una cottura perfetta. In una vera pizza alla romana, è proprio il bordo a rivelare la maestria del mastro pizzaiolo: dorato, privo di umidità e incredibilmente friabile. È il perimetro croccante che custodisce tutti i sapori del condimento, regalando quella sonorità inconfondibile a ogni morso.
+                        </span>
+                    </p>
+                </div>
+
+                <!-- Colonna Foto Grande e Allineata a Destra (Larga 6) -->
+                <div class="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                    <img src="img/pizza.tonda.png" alt="Pizzaiolo Bordo" class="img-fluid foto-grande">
+                </div>
+
+            </div><!-------------------------Chiude row1------------------------------------------------------------------------->
+        </div><!-------------------------Chiude container------------------------------------------------------------------------->
+    </div>    
+
+<!-------------------------------------------------------------------------------------------------->
+    <div class="sezione-locali py-5">
+        <div class="container">
+            <!-- Titolo della Sezione -->
+            <div class="text-center mb-5">
+                <h2 class="text-secondary fs-5 pb-1 text-uppercase fw-bold">Le nostre sedi</h2>
+                <h3 class="fw-bold fs-2 text-dark">Storie di quartiere</h3>
+            </div>
+
+            <!-- Griglia con le Sedi -->
+            <div class="row g-4 justify-content-center">
+
+                <!-- Sede 1: Testaccio -->
+                <div class="col-12 col-md-5 col-lg-4 text-start">
+                    <div class="p-2">
+                        <a href="https://maps.google.com/?q=Testaccio+Roma" target="_blank" rel="noopener">
+                            <img src="img/locale.testaccio.jpg" alt="Interno della pizzeria Bordo a Testaccio" class="img-fluid object-fit-contain mb-3 rounded">
+                        </a>
+                        <h4 class="fw-bold text-dark text-uppercase fs-4 mb-2">Testaccio</h4>
+                        <p>Dal 2006, la nostra prima casa. Un punto di riferimento nel cuore dello storico quartiere per chi cerca l'autentica pizza romana: sottile, croccante e ricca di tradizione.</p>
+                    </div>
+                </div>
+
+                <!-- Sede 2: San Giovanni -->
+                <div class="col-12 col-md-5 col-lg-4 text-start">
+                    <div class="p-2">
+                        <a href="https://maps.google.com/?q=San+Giovanni+Roma" target="_blank" rel="noopener">
+                            <img src="img/locale.san.giovanni.jpg" alt="Interno della pizzeria Bordo a San Giovanni" class="img-fluid object-fit-contain mb-3 rounded">
+                        </a>
+                        <h4 class="fw-bold text-dark text-uppercase fs-4 mb-2">San Giovanni</h4>
+                        <p>La nostra seconda sede, nata per portare la tipica 'scrocchiarella' in un nuovo quartiere a Roma. Il luogo ideale dove condividere con amici e famiglia il gusto di una volta.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-------------------------------------------------------------------------------------------------->
+   <!-- Banner Call to Action a tutta larghezza -->
+    <div class="menu-cta-banner position-relative d-flex align-items-center text-center">
+        
+        <!-- Overlay scuro per migliorare la leggibilità del testo sopra la foto -->
+        <div class="overlay"></div>
+
+            <div class="container position-relative z-1 py-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        
+                        <span class="text-warning text-uppercase fw-bold tracking-wider mb-2 d-block fs-3">
+                            Esperienza di gusto
+                        </span>
+                        
+                        <h2 class="display-4 fw-bold text-white mb-3">
+                           Pronto a gustare la tradizione?
+                        </h2>
+                        
+                        <p class="fs-4 text-light opacity-90 mb-4 px-md-4">
+                            Fritti artigianali, pizze classiche e speciali.
+                        </p>
+                        
+                        <!-- Bottone d'azione -->
+                        <a href="menu.html" class="btn btn-warning rounded-pill px-5 py-3 fw-bold text-uppercase shadow btn-hover-scale">
+                            Scopri il menu
+                        </a>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+<!-------------------------Chiude sezione banner------------------------------------------------------------------------>  
+
+    <section class="py-5" id="asporto">
+        <div class="container py-2">
+            <div class="row py-2">
+                <div class="col-12 py-1">
+                    <h2 class="text-center text-dark text-uppercase fw-bold">Esperienza d’asporto</h2>
+                    <p class="m-0 text-black fs-5 pt-4 text-start text-md-center">
+                        <span class="d-block d-md-inline">
+                            Durante il weekend o negli orari di maggiore affluenza, i tempi di attesa potrebbero variare. Per garantire un servizio più rapido ed efficiente, consigliamo di effettuare l’ordine con anticipo e di rispettare l’orario di ritiro concordato.
+                        </span>
+                        <span class="d-block d-md-inline">
+                            Il ritiro avviene direttamente presso la nostra pizzeria all’orario indicato al momento dell’ordine.
+                        </span>
+                        <span class="d-block d-md-inline">
+                            Per esigenze alimentari, allergie o intolleranze, vi invitiamo a segnalarle al momento dell’ordine: il nostro staff sarà lieto di assistervi nella scelta delle proposte più adatte. Alcuni ingredienti seguono la stagionalità e potrebbero pertanto non essere sempre disponibili.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-------------------------Chiude sezione asporto------------------------------------------------------------------------>  
+
+
+    <section class="blocco-recensioni my-5 sfondo-recensioni">
+        <div class="container py-5">
+
+            <!-- Titolo -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold text-uppercase text-secondary fs-5">Cosa dicono di noi</h2>
+                    <p class="mb-0 fs-1 fw-bold text-dark">Le opinioni dei nostri clienti</p>
+                </div>
+            </div>
+
+            <!-- Carosello -->
+            <div id="carouselRecensioni" class="carousel slide py-3" data-bs-ride="carousel" data-bs-interval="7000">
+                
+                <div class="carousel-inner">
+
+                    <!-- SLIDE 1 (3 CARD) -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            
+                            <div class="col-12 col-lg-4">
+                                <div class="card-recensione">
+                                    <div class="icon-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="text-warning my-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="text-dark fs-5 mb-3">
+                                        "La Margherita di Bordo è una delle migliori che abbia mai mangiato. L'impasto è leggerissimo, e il cornicione croccante."
+                                    </p>
+                                    <div class="border-top pt-2 mt-auto">
+                                        <p class="nome text-secondary fw-bold m-0 fs-6">Roberto Pola</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="card-recensione">
+                                    <div class="icon-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="text-warning my-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="text-dark fs-5 mb-3">
+                                        "Ho provato la Diavola e sono rimasto davvero colpito. Il piccante è deciso ma non copre il gusto degli ingredienti."
+                                    </p>
+                                    <div class="border-top pt-2 mt-auto">
+                                        <p class="nome text-secondary fw-bold m-0 fs-6">Alessia Como</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="card-recensione">
+                                    <div class="icon-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="text-warning my-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="text-dark fs-5 mb-3">
+                                        "La pizza burrata e crudo è stata una vera sorpresa. Fresca, cremosa e bilanciata, con ingredienti di qualità."
+                                    </p>
+                                    <div class="border-top pt-2 mt-auto">
+                                        <p class="nome text-secondary fw-bold m-0 fs-6">Vincenzo Carli</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 (3 CARD) -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            
+                            <div class="col-12 col-lg-4">
+                                <div class="card-recensione">
+                                    <div class="icon-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="text-warning my-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="text-dark fs-5 mb-3">
+                                        "Servizio impeccabile e locale davvero accogliente. Ritorneremo sicuramente con tutta la famiglia!"
+                                    </p>
+                                    <div class="border-top pt-2 mt-auto">
+                                        <p class="nome text-secondary fw-bold m-0 fs-6">Marco Rossi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="card-recensione">
+                                    <div class="icon-circle">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="text-warning my-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="text-dark fs-5 mb-3">
+                                        "I dolci della casa sono eccezionali. Il tiramisu è preparato a regola d'arte."
+                                    </p>
+                                    <div class="border-top pt-2 mt-auto">
+                                        <p class="nome text-secondary fw-bold m-0 fs-6">Giulia Bianchi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-4">
+                                <div class="card-recensione">
+                                    <div class="icon-circle circle-recenzioni">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </div>
+                                    <div class="text-warning my-2">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="text-dark fs-5 mb-3">
+                                        "Ambiente piacevole e personale sempre sorridente. È diventato il nostro punto di riferimento."
+                                    </p>
+                                    <div class="border-top pt-2 mt-auto">
+                                        <p class="nome text-secondary fw-bold m-0 fs-6">Luca Verdi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+<section class="py-5" id="sedi">
+    <div class="container py-4">
+        <h2 class="text-center text-dark text-uppercase fw-bold mb-5">Le nostre sedi a Roma</h2>
+        
+        <div class="row g-4 justify-content-center">
+
+            <!-- Sede Testaccio -->
+            <div class="col-12 col-lg-10">
+                <div class="p-4 p-md-5 bg-light shadow-sm rounded-4 border border-black border-opacity-25 mb-4">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-5">
+                            <img src="img/locale.testaccio.jpg" alt="Locale di Testaccio" class="img-fluid rounded-4 shadow-sm w-100 object-fit-cover img-locale-top">
+                        </div>
+                        <div class="col-lg-7 text-center text-md-start">
+                            <h3 class="fw-bold text-uppercase text-dark mb-1 fs-2">Testaccio</h3>
+                            <p class="text-muted mb-3 fs-5">Via Marmorata, 160</p>
+                            <p class="text-dark mb-4 fs-6 lh-lg">
+                                Martedì - Venerdì: 19:00 - 23:30<br>
+                                Sabato e Domenica: 19:00 - 00:00<br>
+                                Lunedì: <strong class="text-danger">Chiuso</strong>
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+                                <a href="tel:063811234" class="btn btn-warning text-dark fw-bold text-uppercase rounded-pill px-4 py-2 bottone">
+                                    Prenota un tavolo
+                                </a>
+                                <a href="menu.html" class="btn btn-outline-dark fw-bold text-uppercase rounded-pill px-4 py-2">
+                                    Scopri il Menu
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sede San Giovanni -->
+            <div class="col-12 col-lg-10">
+                <div class="p-4 p-md-5 bg-light shadow-sm rounded-4 border border-black border-opacity-25">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-5">
+                            <img src="img/locale.san.giovanni.jpg" alt="Locale di San Giovanni" class="img-fluid rounded-4 shadow-sm w-100 object-fit-cover img-locale-top">
+                        </div>
+                        <div class="col-lg-7 text-center text-md-start">
+                            <h3 class="fw-bold text-uppercase text-dark mb-1 fs-2">San Giovanni</h3>
+                            <p class="text-muted mb-3 fs-5">Via Gallia, 103</p>
+                            <p class="text-dark mb-4 fs-6 lh-lg">
+                                Martedì - Venerdì: 19:00 - 23:30<br>
+                                Sabato e Domenica: 19:00 - 00:00<br>
+                                Lunedì: <strong class="text-danger">Chiuso</strong>
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+                                <a href="tel:0639361112" class="btn btn-warning text-dark fw-bold text-uppercase rounded-pill px-4 py-2 bottone">
+                                    Prenota un tavolo
+                                </a>
+                                <a href="menu.html" class="btn btn-outline-dark fw-bold text-uppercase rounded-pill px-4 py-2">
+                                    Scopri il Menu
+                                </a>
+                            </div>
+                        </div>
+        </section>
+</main>
+<!-------------------------Chiude main------------------------------------------------------------------------->
+
+    <footer>
+            <p>Copyright © 2026 Bordo</p>
+            <p>P.IVA 01234567890</p>
+            <p>Tutti i diritti sono riservati.</p> 
+            <p>
+                <a href="">Privacy Policy</a>
+                            |
+                <a href="">Cookie Policy</a>
+            </p>
+
+            <p>
+                Seguici sui nostri canali social
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+            </p>
+                    
+<!-------------------------------------Crediti---------------------------------------------->     
+                    <hr>         
+        <div class="crediti">
+            <p>Questo sito fa parte di un portfolio ed è stato realizzato a puro scopo dimostrativo.</p>
+            <p>Le immagini sono utilizzate nel rispetto delle licenze di Magnific e Unsplash.</p>
+            <p>Image Credits | Foto di: </p>
+
+            <div class="gruppo-crediti">
+
+                <a href="https://www.magnific.com/it/foto-gratuito/crocchette-gustose-in-ciotola_20945256.htm#fromView=keyword&page=1&position=1&uuid=6be0938f-4075-4eda-987c-5f5dddec7489&track=ais_hybrid&query=Crocchette" target="_blank">Immagine di magnific</a>,
+
+                <a href="https://unsplash.com/it/@mitchel3uo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Mitchell Luo</a>su<a href="https://unsplash.com/it/foto/un-cesto-di-patatine-fritte-seduto-sopra-un-tavolo-di-legno-ChXHveqrb28?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>,
+
+                <a href="https://unsplash.com/it/@mirkofabian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"target="_blank">Mirko Fabian</a> su <a href="https://unsplash.com/it/foto/una-pizza-con-broccoli-e-formaggio-BrC9TBAHGwg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"target="_blank">Unsplash</a>,
+
+                <a href="https://www.magnific.com/it/foto-gratuito/chef-in-uniforme-bianco-prepara-una-pizza_5911722.htm#fromView=keyword&page=1&position=22&uuid=5ab7362a-f3e7-4f48-bfde-15f4fd4ecfcc&track=ais_hybrid&query=Pizzaiolo+che+prepara+pizza" target="_blank">Immagine di prostooleh su Magnific</a>,
+            </div>
+            
+            <div class="gruppo-crediti">
+            
+                <a href="https://unsplash.com/it/@phototastyfood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">David Foodphototasty</a> su <a href="https://unsplash.com/it/foto/una-pizza-con-un-cucchiaio-DB0v9qJKQJw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>,
+
+                <a href="https://unsplash.com/it/@adhitya_2505?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Adhitya Sibikumar</a> su <a href="https://unsplash.com/it/foto/interno-moderno-del-ristorante-con-specchi-rotondi-e-luci-a-sospeso-Yxm90BYxq3E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>,
+
+                <a href="https://www.magnific.com/it/foto-gratuito/tavolo-da-pranzo-in-hotel-di-lusso_4692128.htm#fromView=search&page=5&position=15&uuid=328a1c9f-cd1c-4bb3-89f7-18509b237d98&track=ais_hybrid&query=ristoranti" target="_blank">Immagine di jcomp su Magnific</a>,
+
+
+            </div>
+                
+            <div class="gruppo-crediti">
+
+                <a href="https://www.magnific.com/it/foto-gratuito/crocchette-di-cibo-delizioso-ad-alto-angolo_20944290.htm#fromView=keyword&page=1&position=16&uuid=fcdd8664-d90a-4421-bcbb-d5b65410984c&track=ais_hybrid&query=Crocchette" target="_blank">Immagine di magnific</a>,
+
+                <a href="https://www.magnific.com/it/immagine-ia-gratis/fine-di-carta-di-struttura-in-su_410571017.htm#fromView=keyword&page=4&position=42&uuid=1ac8f8fd-95e3-4442-8b94-8d9d79bec2e8&track=ais_hybrid&query=Carta+millimetrata" target="_blank">Immagine di magnific</a>.
+            </div>
+        </div>
+
+        <!-------------------------Chiude crediti------------------------------------------------------------------------->
+
+        <span class="tornasu">
+                <a href="#top">
+                <i class="fa-solid fa-circle-chevron-up fs-1"></i>
+                </a> 
+        </span>
+
+    </footer>  
+ <!-------------------------Chiude footer------------------------------------------------------------------------->
+
+
+</body>
+</html>
+
+
+
+
+
