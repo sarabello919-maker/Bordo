@@ -923,14 +923,15 @@ main{
 
 
 /*---------------------------------------------------------------------------------*/
+
+
+/* SOLUZIONE DEFINITIVA TABLET ORIZZONTALE (Landscape) */
 @media screen 
   and (orientation: landscape)
   and (pointer: coarse)
-  and (hover: none)
-  and (min-width: 768px)
-  and (max-height: 1100px) {
+  and (hover: none) {
 
-  /* --- AGGIUNTO: Hamburger e header in colonna anche in orizzontale --- */
+  /* 1. Header a colonna e hamburger attivo */
   header {
     flex-direction: column !important;
     align-items: center !important;
@@ -959,6 +960,7 @@ main{
     margin: 0 !important;
   }
 
+  /* I tuoi stili grafici originali per l'orizzontale */
   .pizza-banner {
     height: 380px !important;      
     margin-top: 40px !important;   
@@ -973,7 +975,7 @@ main{
   }
 }
 
-
+/*-----------------------------------------------------------------*/
 
 @media screen 
 and (min-width: 768px)
