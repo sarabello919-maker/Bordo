@@ -833,8 +833,10 @@ footer hr{
 }
 
 .menu-text p:first-child {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    flex-wrap: nowrap !important;
 }
 
 .menu-text p:first-child::after {
@@ -918,12 +920,7 @@ main{
 
 }
 
-
-
-
-
 /*---------------------------------------------------------------------------------*/
-
 
 /*TABLET ORIZZONTALE (Landscape) */
 @media screen 
@@ -975,16 +972,6 @@ main{
   }
 }
 
-@media screen 
-  and (max-width: 1366px)
-  and (orientation: landscape) {
-
-    .foto-pizza-sezione {
-        height: auto !important;
-        aspect-ratio: 4 / 3 !important;
-        max-width: 100% !important;
-    }
-}
 /*-----------------------------------------------------------------*/
 
 @media screen 
@@ -1087,6 +1074,27 @@ and (orientation: portrait) {
 
 /*-----------------------------------------------------------------*/
 
+@media (max-width: 480px) {
+    /* 1. Trasforma la voce del menu in un blocco pulito a due righe sotto i 480px */
+    .menu-text p:first-child {
+        display: block !important;
+        position: relative !important;
+        padding-right: 70px !important; /* Lascia lo spazio fisso per il prezzo a destra */
+    }
+
+    /* 2. Disattiva i puntini fluidi che creano problemi su schermi piccolissimi */
+    .menu-text p:first-child::after {
+        display: none !important;
+    }
+
+    /* 3. Prende il prezzo e lo blocca in alto a destra, pulito e leggibile */
+    .menu-price {
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        white-space: nowrap !important;
+    }
+}
 
 /* MOBILE (≤ 768px) */
 
