@@ -981,25 +981,23 @@ main{
 }
 
 
-
-/* --- SOLO TABLET ORIZZONTALE (Landscape) --- */
+/* --- ATTIVA L'HAMBURGER E METTE LE FOTO SOTTO SOLO SU TABLET IN ORIZZONTALE --- */
 @media screen 
   and (orientation: landscape)
-  and (pointer: coarse)
-  and (hover: none)
   and (min-width: 768px)
-  and (max-height: 1100px) {
+  and (max-width: 1366px) {
 
-    /* Header in riga: Logo a sinistra, Hamburger a destra */
+    /* 1. Allinea l'header: Logo a sinistra, Hamburger a destra */
     header {
       display: flex !important;
       flex-direction: row !important;
       justify-content: space-between !important;
       align-items: center !important;
       padding: 15px 30px !important;
+      position: relative;
     }
 
-    /* Mostra l'hamburger a destra */
+    /* 2. Mostra l'hamburger e posizionalo a destra */
     .hamburger {
       display: block !important;
       order: 2;
@@ -1009,7 +1007,7 @@ main{
       order: 1;
     }
 
-    /* Nasconde il menu esteso e lo trasforma a tendina */
+    /* 3. Nasconde il menu esteso e lo trasforma in tendina a scomparsa */
     #nav {
       display: none;
       position: absolute;
@@ -1023,6 +1021,7 @@ main{
       z-index: 999;
     }
 
+    /* Quando clicchi l'hamburger, si apre */
     #nav.active {
       display: block !important;
     }
@@ -1032,9 +1031,12 @@ main{
       flex-direction: column !important;
       align-items: center !important;
       gap: 15px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none;
     }
 
-    /* Forza le foto sotto il testo anche in orizzontale */
+    /* 4. Forza le foto rigorosamente sotto il testo in orizzontale */
     .row.py-4.g-5 {
       display: flex !important;
       flex-direction: column !important;
@@ -1045,21 +1047,7 @@ main{
       max-width: 100% !important;
       width: 100% !important;
     }
-
-    .pizza-banner {
-      height: 380px !important;      
-      margin-top: 40px !important;   
-    }
-
-    .hero-menu h1 {
-      font-size: 45px;
-    }
-
-    .hero-menu p {
-      font-size: 18px;
-    }
 }
-
 /*soluzione tablet orizzontale*/
 
 
