@@ -869,41 +869,6 @@ main{
 
 @media (max-width: 991.98px) {
 
-/* 1. Rende l'header a colonna così il menu si posiziona sotto l'hamburger */
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* 2. Mostra il bottone hamburger */
-  .hamburger {
-    display: block !important;
-  }
-
-  /* 3. Nasconde il menu di base */
-  #nav {
-    display: none;
-    width: 100%;
-    text-align: center;
-    margin-top: 15px; /* Spazio esatto sotto l'hamburger */
-  }
-
-  /* 4. Quando è attivo, compare dritto sotto */
-  #nav.active {
-    display: block !important;
-  }
-
-  /* 5. Mette le voci del menu in colonna una sotto l'altra */
-  header nav ul {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 15px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-
-
   .hero-menu {
     background-position: 232px 237px;
     height: 640px;
@@ -953,31 +918,61 @@ main{
 
 }
 
-/*---------------------------------------------------------------------------------*/
 
-  @media screen 
+
+
+
+/*---------------------------------------------------------------------------------*/
+@media screen 
   and (orientation: landscape)
   and (pointer: coarse)
   and (hover: none)
   and (min-width: 768px)
   and (max-height: 1100px) {
 
-.pizza-banner {
-        height: 380px !important;      /* Un'altezza media per non schiacciarla ma farla entrare bene nello schermo orizzontale */
-        margin-top: 40px !important;   /* Spazio dal testo ridotto proporzionalmente */
-    }
+  /* --- AGGIUNTO: Hamburger e header in colonna anche in orizzontale --- */
+  header {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 
-.hero-menu h1 {
-  font-size: 45px;
+  .hamburger {
+    display: block !important;
+  }
+
+  #nav {
+    display: none !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+  }
+
+  #nav.active {
+    display: block !important;
+  }
+
+  header nav ul {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .pizza-banner {
+    height: 380px !important;      
+    margin-top: 40px !important;   
+  }
+
+  .hero-menu h1 {
+    font-size: 45px;
+  }
+
+  .hero-menu p {
+    font-size: 18px;
+  }
 }
 
-.hero-menu p {
-  font-size: 18px;
-}
-
-}
-
-/*soluzione tablet orizzontale*/
 
 
 @media screen 
@@ -985,13 +980,40 @@ and (min-width: 768px)
 and (max-width: 991.98px)
 and (orientation: portrait) {
 
-    header {
-      padding: 20px 25px;
-    }
+  /* --- AGGIUNTO: Hamburger e header in colonna in verticale --- */
+  header {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 20px 25px;
+  }
 
-    .logo img {
-      width: 150px;
-    }
+  .hamburger {
+    display: block !important;
+  }
+
+  #nav {
+    display: none !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 15px !important;
+  }
+
+  #nav.active {
+    display: block !important;
+  }
+
+  header nav ul {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  /* ------------------------------------------------------------ */
+
+  .logo img {
+    width: 150px;
+  }
 
   .titoli h1 {
     font-size: 30px;
@@ -1002,31 +1024,12 @@ and (orientation: portrait) {
     font-size: 20px;
   }
 
-
-  header nav ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 15px;
-      flex-wrap: nowrap;
-    }
-
-  header nav li {
-      white-space: nowrap;
-    }
-
-  header nav li a {
-    font-size: 16px;
-    white-space: nowrap;
-  }
-
   .pizza-banner {
-        height: 460px !important;      /* Altezza bilanciata per il tablet verticale */
-        margin-top: 50px !important;   /* Spazio dal testo calibrato */
-    }
+    height: 460px !important;      
+    margin-top: 50px !important;   
+  }
  
-  .hero-menu p{
+  .hero-menu p {
     padding: 0px 20px !important;
     font-size: 20px !important;
   }
@@ -1040,35 +1043,34 @@ and (orientation: portrait) {
   }
 
   .nav-piatti nav ul {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      gap: 12px 16px;
-      padding: 0;
-      margin: 0;
-      justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 12px 16px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
   }
 
-  .nav-piatti nav ul li a{
+  .nav-piatti nav ul li a {
     display: block;
     text-align: center;
     padding: 8px 18px;
-    border: 2px solid #222!important;
+    border: 2px solid #222 !important;
     background-color: #222;
     border-radius: 50px;
-    color: #fff!important;
+    color: #fff !important;
     font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
   }
 
-  .nav-piatti nav ul li a:hover{
+  .nav-piatti nav ul li a:hover {
     background-color: transparent;
-    color: #ffc107!important;
-    border-color: #222!important;
+    color: #ffc107 !important;
+    border-color: #222 !important;
   }
 }
-  
-/*soluzione tablet menu verticale*/
+
 
 
 /*-----------------------------------------------------------------*/
