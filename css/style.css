@@ -52,7 +52,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 8px 30px; /* Ridotto il padding sopra/sotto per stringere l'intera fascia */
+  padding: 8px 30px;
   box-sizing: border-box;
 }
 
@@ -60,14 +60,14 @@ header {
 /* LOGO */
 .logo {
   display: flex;
-  flex-direction: row; /* Mette il simbolo e il testo sulla stessa riga */
+  flex-direction: row; 
   align-items: center;
   gap: 10px;
 }
 
 /* Stile per il logo principale */
 .logo img:not(.marchio) {
-  width: 95px; /* Reso più compatto */
+  width: 95px;
   height: auto;
   display: block;
   transition: 0.2s;
@@ -76,7 +76,7 @@ header {
 
 /* Adattamento specifico per il marchio */
 .logo .marchio {
-  height: 35px; /* Ridotta l'altezza per farla rientrare in una fascia più stretta */
+  height: 35px; 
   width: auto;
   display: block;
   transition: 0.2s;
@@ -136,9 +136,9 @@ nav li a:hover{
     color: #111;
 
     font-family: Quicksand;
-    font-size: 14px; /* Aumentato leggermente (era 13px, l'originale era 16px) */
+    font-size: 14px; 
 
-    padding: 5px 12px; /* Aumentato leggermente lo spazio interno */
+    padding: 5px 12px; 
 
     cursor: pointer;
 
@@ -146,7 +146,7 @@ nav li a:hover{
 
     text-transform: uppercase;
 
-    border-radius: 15px; /* Arrotondamento bilanciato */
+    border-radius: 15px; 
 
     text-decoration: none;
 }
@@ -229,33 +229,30 @@ main{
     background-color: #eee;
 }
 
-/* --------------------------------------------------------------------------- */
-/* Contenitore principale dell'header */
+
 .sfondo-header {
     position: relative;
     width: 100%;
     height: 500px;
-    background-color: #111; /* Colore di fondo scuro base */
+    background-color: #111; 
     overflow: hidden;
 }
 
-/* Forza il carosello a riempire tutto l'header */
 #headerCarousel, 
 .carousel-inner, 
 .carousel-item {
     height: 100%;
 }
 
-/* Fa in modo che le immagini del carosello si adattino perfettamente */
 .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 50%; /* Mantiene la tua regola di posizionamento */
-    opacity: 0.5; /* Regola qui l'opacità delle foto dello slider (es. 0.3 o 0.5) */
+    object-position: center 50%; 
+    opacity: 0.5; 
 }
 
-/* Overlay scuro generale per uniformare il tutto */
+
 .sfondo-header::before {
     content: "";
     position: absolute;
@@ -263,25 +260,23 @@ main{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Velatura scura aggiuntiva */
+    background-color: rgba(0, 0, 0, 0.3); 
     z-index: 1;
-    pointer-events: none; /* Evita che blocchi i click */
+    pointer-events: none;
 }
 
-/* Assicura che il testo, il titolo e i bottoni stiano sopra le foto e l'overlay */
+
 .sfondo-header > * {
     position: relative;
     z-index: 2;
 }
 
 
-
-/* Posizionamento del testo nella zona nera superiore */
 .hero-testo {
     position: absolute;
-    top: 50%;          /* Spostato esattamente al 50% dall'alto (prima era 30%) */
+    top: 50%;          
     left: 50%;         
-    transform: translate(-50%, -50%); /* Centra perfettamente il blocco nel suo punto di origine */
+    transform: translate(-50%, -50%); 
     text-align: center;
     z-index: 2;
     width: 100%;
@@ -289,7 +284,7 @@ main{
     padding: 0 20px;
 }
 
-/* Titolo grande ed elegante */
+
 .titolo {
     color: #fff;
     font-size: 50px;
@@ -299,7 +294,7 @@ main{
     margin-bottom: 10px; 
 }
 
-/* Sottotitolo pulito e proporzionato */
+
 .hero-testo p {
     color: #e0e0e0;
     font-size: 27px;
@@ -315,30 +310,30 @@ main{
 /* --- OTTIMIZZAZIONE RESPONSIVE PER TABLET E TELEFONI --- */
 @media (max-width: 992px) {
     .sfondo-header {
-        height: 500px; /* Riduce leggermente l'altezza complessiva su tablet */
+        height: 500px;
     }
     .titolo {
-        font-size: 2.8rem; /* Riduce la dimensione del titolo per non farlo andare a capo male */
+        font-size: 2.8rem;
         letter-spacing: 3px;
     }
     .hero-testo p {
-        font-size: 20px; /* Riduce il sottotitolo */
+        font-size: 20px;
     }
 }
 
 @media (max-width: 576px) {
     .sfondo-header {
-        height: 420px; /* Altezza compatta per smartphone */
+        height: 420px; 
     }
     .hero-testo {
-        top: 35%; /* Lo alza leggermente per centrarlo meglio nello spazio visibile */
+        top: 35%; 
     }
     .titolo {
-        font-size: 2rem; /* Titolo perfetto per schermi piccoli */
+        font-size: 2rem; 
         letter-spacing: 2px;
     }
     .hero-testo p {
-        font-size: 16px; /* Sottotitolo proporzionato per mobile */
+        font-size: 16px;
         margin-bottom: 15px;
     }
 }
@@ -353,18 +348,11 @@ main{
 
 
 .card-scura-gialla {
-/* Sfondo con immagine scurita tramite un filtro nero semitrasoparente */
 background: linear-gradient(135deg, #151515 0%, #121212 100%);
 background-size: cover;
 background-position: center;
-
-/* Bordo e divisione */
 border: 3px solid #222; 
-
-/* Effetto ombra calda */
 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-
-/* Transizione per eventuale effetto al passaggio del mouse */
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -373,22 +361,22 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .icon-circle {
     width: 70px;
     height: 70px;
-    background-color: rgba(212, 160, 23, 0.15); /* Giallo/Oro semi-trasparente */
-    border-radius: 50%; /* Rende il blocco perfettamente tondo */
+    background-color: rgba(212, 160, 23, 0.15); 
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; /* Centra il cerchio nel rettangolo */
+    margin: 0 auto; 
     transition: all 0.3s ease;
 }
 
-/* Colore e dimensione dell'icona dentro al cerchio */
+
 .icon-circle i {
     font-size: 28px;
-    color: #d4a017; /* Giallo/Oro pieno */
+    color: #d4a017;
 }
 
-/* Effetto al passaggio del mouse sul riquadro (opzionale ma bellissimo) */
+
 .card-scura-gialla:hover .icon-circle {
     background-color: rgba(212, 160, 23, 0.25);
     transform: scale(1.05);
@@ -404,7 +392,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .foto-pizza-sezione {
     width: 100% !important;
     max-width: 500px !important;
-    height: 480px !important; /* Ottimizzata per desktop */
+    height: 480px !important;
     object-fit: cover !important;
     object-position: center !important;
     border-radius: 12px;
@@ -414,7 +402,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 @media (max-width: 991px) {
     .foto-pizza-sezione {
         height: auto !important;
-        aspect-ratio: 4 / 3 !important; /* Mantiene la foto proporzionata e ben visibile */
+        aspect-ratio: 4 / 3 !important;
         max-width: 100% !important;
     }
 }
@@ -425,25 +413,24 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-/* Stile del titolo piccolo (es. "LE NOSTRE SEDI") */
+
 .sezione-locali h2 {
-    letter-spacing: 1.5px; /* Dà respiro al testo in maiuscolo */
+    letter-spacing: 1.5px; 
 }
 
-/* Stile del titolo principale (es. "Trova la sede più vicina a te") */
 .sezione-locali h3 {
     line-height: 1.3;
 }
 
-/* Stile dei nomi dei quartieri (Testaccio, San Giovanni) */
+
 .sezione-locali h4 {
     letter-spacing: 0.5px;
 }
 
 /* Stile dei paragrafi descrittivi */
 .sezione-locali p {
-    font-size: 18px;       /* Dimensione equilibrata */
-    line-height: 1.6;      /* Aumenta lo spazio tra le righe per evitare l'effetto compresso */
+    font-size: 18px;       
+    line-height: 1.6;      
     color: #222 !important;
 }
 
@@ -455,7 +442,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-image: url('../img/crocchette.tagliere.jpg'); 
     background-size: cover;
     background-position: center 30%;
-    background-attachment: fixed; /* Funziona su PC */
+    background-attachment: fixed;
 }
 
 /* FIX per iOS: Disattiva il background-fixed su iPhone e iPad dove non è supportato */
@@ -476,7 +463,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 0;
 }
 
-/* Stile base del bottone e transizione fluida */
+
 .btn-hover-scale {
     transition: all 0.3s ease;
 }
@@ -502,20 +489,20 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     object-fit: cover;
 }
 
-/* Sfondo semi-trasparente scuro dietro le scritte sulle immagini */
+
 .bg-dark-overlay {
     background: rgba(26, 21, 18, 0.85);
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Spaziatura titoletto */
+
 .tracking-wider {
     letter-spacing: 2px;
     font-size: 0.85rem;
 }
 
-/* Personalizzazione indicatori (pallini) */
+
 .carousel-indicators [data-bs-target] {
     background-color: #ffc107;
     width: 12px;
@@ -535,7 +522,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 /* --------------------------------------------------------------------------- */
 
 #asporto {
-    background-image: url(../img/foglio.ordini.jpg); /* Aggiorna con il nome esatto dell'immagine salvata da GIMP */
+    background-image: url(../img/foglio.ordini.jpg);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -549,13 +536,13 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #111 !important;
     font-weight: 800 !important;
     text-decoration: underline;
-    text-underline-offset: 10px; /* Aumenta o diminuisci questo valore (es. 6px, 10px) per regolare la distanza */
+    text-underline-offset: 10px; 
 }
 
 #asporto p {
-    color: #111 !important; /* Nero quasi pieno, via il grigio chiaro */
-    font-weight: 600 !important; /* Più corposo */
-    line-height: 1.7;         /* Più spazio tra le righe per dare respiro */
+    color: #111 !important;
+    font-weight: 600 !important; 
+    line-height: 1.7;         
 }
 
 /* --------------------------------------------------------------------------- */
@@ -563,12 +550,11 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 /* Bottone */
 .bottone {
-    border: 2px solid #ffc107; /* Fissa lo spessore a 2px fin da subito */
+    border: 2px solid #ffc107;
     transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
-/* Stato in hover (cambia solo il colore, lo spessore resta identico) */
 .bottone:hover {
     background-color: transparent !important;
     border-color: #ffc107 !important;
@@ -583,7 +569,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 25px !important;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    min-height: 320px !important; /* Si adatta se il testo è più lungo su mobile */
+    min-height: 320px !important; 
     height: 100% !important;
     display: flex;
     flex-direction: column;
@@ -594,7 +580,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .icon-circle {
     width: 50px;
     height: 50px;
-    flex-shrink: 0 !important; /* Impedisce al cerchio di rimpicciolirsi */
+    flex-shrink: 0 !important;
     background-color: #ffc107 !important;
     border-radius: 50%;
     display: flex;
@@ -604,35 +590,15 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-circle i {
-    color: #ffffff !important; /* Virgolette bianche */
+    color: #ffffff !important;
     font-size: 20px;
-}
-
-/* Sposta le frecce del carosello all'esterno */
-#carouselRecensioni .carousel-control-prev {
-    left: -50px !important;
-    width: auto;
-}
-
-#carouselRecensioni .carousel-control-next {
-    right: -50px !important;
-    width: auto;
-}
-
-/* Icona freccia grigio scuro tonda */
-#carouselRecensioni .carousel-control-prev-icon,
-#carouselRecensioni .carousel-control-next-icon {
-    background-color: #6c757d;
-    border-radius: 50%;
-    padding: 15px;
-    background-size: 50%;
 }
 
 
 /* Regola specifica per dispositivi mobili */
 @media (max-width: 991px) {
     .card-recensione {
-        height: auto !important; /* Lascia che la card si adatti in altezza su mobile */
+        height: auto !important; 
         min-height: unset !important;
         padding: 20px !important;
     }
@@ -642,7 +608,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
         height: 45px !important;
         min-width: 45px !important;
         flex-shrink: 0 !important;
-        margin: 0 auto 12px auto !important; /* Posiziona l'icona dentro i bordi della card senza tagliarla */
+        margin: 0 auto 12px auto !important;
     }
 }
 
@@ -660,7 +626,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 /* Regola specifica per dispositivi mobili per evitare il salto */
 @media (max-width: 991px) {
     .carousel-inner {
-        min-height: 380px !important; /* Aumenta l'altezza minima su mobile perché il testo va su più righe */
+        min-height: 380px !important; 
     }
 }
 
@@ -928,7 +894,7 @@ main{
   and (pointer: coarse)
   and (hover: none) {
 
-  /* 1. Header a colonna e hamburger attivo */
+  /* Header a colonna e hamburger attivo */
   header {
     flex-direction: column !important;
     align-items: center !important;
@@ -1080,7 +1046,6 @@ and (orientation: portrait) {
         display: none !important;
     }
 
-    /* Facciamo in modo che il nome del piatto e il prezzo respirino bene */
     .menu-item {
         display: flex !important;
         justify-content: space-between !important;
@@ -1100,13 +1065,9 @@ and (orientation: portrait) {
 
     .menu-price {
         white-space: nowrap !important;
-        font-weight: bold !important; /* Opzionale: risalta leggermente il prezzo */
+        font-weight: bold !important; 
     }
 }
-
-
-
-
 
 
 /* MOBILE (≤ 768px) */
@@ -1139,8 +1100,8 @@ and (orientation: portrait) {
   }
 
 .pizza-banner {
-        height: 280px !important;      /* Altezza compatta e perfetta per smartphone */
-        margin-top: 30px !important;   /* Spazio dal testo ridotto per non lasciare troppo vuoto */
+        height: 280px !important;      
+        margin-top: 30px !important;   
   }
 
   .hero-menu {
