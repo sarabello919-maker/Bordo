@@ -1074,27 +1074,40 @@ and (orientation: portrait) {
 
 /*-----------------------------------------------------------------*/
 
-@media (max-width: 480px) {
-    /* 1. Trasforma la voce del menu in un blocco pulito a due righe sotto i 480px */
-    .menu-text p:first-child {
-        display: block !important;
-        position: relative !important;
-        padding-right: 70px !important; /* Lascia lo spazio fisso per il prezzo a destra */
-    }
-
-    /* 2. Disattiva i puntini fluidi che creano problemi su schermi piccolissimi */
+@media (max-width: 767px) {
+    /* Spegniamo i puntini su mobile */
     .menu-text p:first-child::after {
         display: none !important;
     }
 
-    /* 3. Prende il prezzo e lo blocca in alto a destra, pulito e leggibile */
+    /* Facciamo in modo che il nome del piatto e il prezzo respirino bene */
+    .menu-item {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: flex-start !important;
+        gap: 15px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .menu-text {
+        flex: 1 !important;
+    }
+
+    .menu-text p:first-child {
+        display: block !important;
+        margin-bottom: 0 !important;
+    }
+
     .menu-price {
-        position: absolute !important;
-        top: 0 !important;
-        right: 0 !important;
         white-space: nowrap !important;
+        font-weight: bold !important; /* Opzionale: risalta leggermente il prezzo */
     }
 }
+
+
+
+
+
 
 /* MOBILE (≤ 768px) */
 
