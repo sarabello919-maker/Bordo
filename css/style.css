@@ -869,6 +869,41 @@ main{
 
 @media (max-width: 991.98px) {
 
+/* 1. Rende l'header a colonna così il menu si posiziona sotto l'hamburger */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 2. Mostra il bottone hamburger */
+  .hamburger {
+    display: block !important;
+  }
+
+  /* 3. Nasconde il menu di base */
+  #nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px; /* Spazio esatto sotto l'hamburger */
+  }
+
+  /* 4. Quando è attivo, compare dritto sotto */
+  #nav.active {
+    display: block !important;
+  }
+
+  /* 5. Mette le voci del menu in colonna una sotto l'altra */
+  header nav ul {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+
+
   .hero-menu {
     background-position: 232px 237px;
     height: 640px;
@@ -917,6 +952,8 @@ main{
 }
 
 }
+
+/*---------------------------------------------------------------------------------*/
 
   @media screen 
   and (orientation: landscape)
