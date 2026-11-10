@@ -866,32 +866,28 @@ main{
 
 
 /* TABLET E MOBILE (≤ 991.98px) - Mostra l'hamburger su smartphone e tablet */
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
 
   .hero-menu {
     background-position: 232px 237px;
-    height: 640px;
+    height: 300px;
   }
 
-  .hero img{
-     width: 350px;
+  .hero img {
+    width: 350px;
   }
  
-  .titoli h1{
+  .titoli h1 {
     font-size: 40px;
   }
 
-  .titoli h2{
-   font-size: 28px;
+  .titoli h2 {
+    font-size: 28px;
   }
 
   .pizza-banner {
-        height: 380px !important;      
-        margin-top: 40px !important;   
-  }
-
-  .nav-piatti{
-    margin-top: -455px;
+    height: 380px !important;      
+    margin-top: 40px !important;   
   }
 
   .nav-piatti ul {
@@ -901,18 +897,20 @@ main{
   .nav-piatti a {
     font-size: 20px;
   }
-   
+    
+  /* --- FORZA TESTO E FOTO A DISPORSI IN VERTICALE (UNO SOTTO L'ALTRO) --- */
   .row.py-4.g-5 {
     display: flex !important;
-    flex-wrap: nowrap !important;
+    flex-direction: column !important;
   }
 
   .row.py-4.g-5 > div {
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
   }
 
-  /* --- GESTIONE HEADER E HAMBURGER PER TABLET E MOBILE --- */
+  /* --- GESTIONE HEADER E MENU HAMBURGER (TABLET E MOBILE) --- */
   header {
     flex-direction: column;
     align-items: center;
@@ -921,24 +919,24 @@ main{
     padding: 25px 20px;
   }
 
-  /* Mostra il bottone hamburger su tablet e mobile */
+  /* Mostra il bottone hamburger */
   .hamburger {
     display: block !important;
   }
 
-  /* Nasconde il menu di default finché non viene aperto */
+  /* Nasconde il menu esteso di default */
   #nav {
     display: none;
     width: 100%;
     text-align: center;
   }
 
-  /* Quando clicchi l'hamburger, si apre */
+  /* Quando viene aperto con il click */
   #nav.active {
     display: block !important;
   }
 
-  /* Disposizione verticale dei link nel menu a tendina dell'hamburger */
+  /* Disposizione verticale dei link nel menu a tendina */
   #nav ul {
     display: flex !important;
     flex-direction: column !important;
@@ -966,139 +964,185 @@ main{
     font-size: 20px !important;
     white-space: nowrap;
   }
-
-  
-  .row.py-4.g-5 {
-    display: flex !important;
-    flex-direction: column !important; 
-  }
-
-  .row.py-4.g-5 > div {
-    flex: 0 0 100% !important;
-    max-width: 100% !important; 
-    width: 100% !important;
-  }
 }
 
 
-
-  @media screen 
+/* --- TABLET ORIZZONTALE (Landscape) --- */
+@media screen 
   and (orientation: landscape)
   and (pointer: coarse)
   and (hover: none)
   and (min-width: 768px)
   and (max-height: 1100px) {
 
-.pizza-banner {
+    .pizza-banner {
         height: 380px !important;     
         margin-top: 40px !important;   
     }
 
-.hero-menu h1 {
-  font-size: 45px;
+    .hero-menu h1 {
+      font-size: 45px;
+    }
+
+    .hero-menu p {
+      font-size: 18px;
+    }
+
+    /* FORZA LA FOTO SOTTO IL TESTO ANCHE IN ORIZZONTALE */
+    .row.py-4.g-5 {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .row.py-4.g-5 > div {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    /* ATTIVA L'HAMBURGER ANCHE QUI */
+    header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 25px 20px;
+    }
+
+    .hamburger {
+      display: block !important;
+    }
+
+    #nav {
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    #nav.active {
+      display: block !important;
+    }
+
+    #nav ul {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 15px !important;
+      padding: 15px 0 !important;
+      margin: 0 !important;
+    }
 }
 
-.hero-menu p {
-  font-size: 18px;
-}
 
-}
-
-/*soluzione tablet orizzontale*/
-
-
+/* --- TABLET VERTICALE (Portrait) --- */
 @media screen 
-and (min-width: 768px)
-and (max-width: 991.98px)
-and (orientation: portrait) {
+  and (min-width: 768px)
+  and (max-width: 991.98px)
+  and (orientation: portrait) {
 
     header {
       padding: 20px 25px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
     }
 
     .logo img {
       width: 150px;
     }
 
-  .titoli h1 {
-    font-size: 30px;
-    padding: 0 10px;
-  }
+    .titoli h1 {
+      font-size: 30px;
+      padding: 0 10px;
+    }
 
-  .titoli h2 {
-    font-size: 20px;
-  }
+    .titoli h2 {
+      font-size: 20px;
+    }
 
+    /* ATTIVA L'HAMBURGER SUL TABLET VERTICALE */
+    .hamburger {
+      display: block !important;
+    }
 
-  header nav ul {
+    #nav {
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    #nav.active {
+      display: block !important;
+    }
+
+    #nav ul {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 15px !important;
+      padding: 15px 0 !important;
+      margin: 0 !important;
+    }
+
+    /* FORZA LA FOTO SOTTO IL TESTO */
+    .row.py-4.g-5 {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .row.py-4.g-5 > div {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    .pizza-banner {
+        height: 460px !important;      
+        margin-top: 50px !important;   
+    }
+   
+    .hero-menu p {
+      padding: 0px 20px !important;
+      font-size: 20px !important;
+    }
+
+    .nav-piatti {
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 15px;
-      flex-wrap: nowrap;
+      justify-content: center;
+      width: 100%;
+      margin-top: -420px;
+      padding-left: 0px;
     }
 
-  header nav li {
-      white-space: nowrap;
-    }
-
-  header nav li a {
-    font-size: 16px;
-    white-space: nowrap;
-  }
-
-  .pizza-banner {
-        height: 460px !important;      /* Altezza bilanciata per il tablet verticale */
-        margin-top: 50px !important;   /* Spazio dal testo calibrato */
-    }
- 
-  .hero-menu p{
-    padding: 0px 20px !important;
-    font-size: 20px !important;
-  }
-
-  .nav-piatti {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: -420px;
-    padding-left: 0px;
-  }
-
-  .nav-piatti nav ul {
+    .nav-piatti nav ul {
       display: grid;
       grid-template-columns: repeat(3, auto);
       gap: 12px 16px;
       padding: 0;
       margin: 0;
       justify-content: center;
-  }
+    }
 
-  .nav-piatti nav ul li a{
-    display: block;
-    text-align: center;
-    padding: 8px 18px;
-    border: 2px solid #222!important;
-    background-color: #222;
-    border-radius: 50px;
-    color: #fff!important;
-    font-weight: 600;
-    text-decoration: none;
-    white-space: nowrap;
-  }
+    .nav-piatti nav ul li a {
+      display: block;
+      text-align: center;
+      padding: 8px 18px;
+      border: 2px solid #222 !important;
+      background-color: #222;
+      border-radius: 50px;
+      color: #fff !important;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
 
-  .nav-piatti nav ul li a:hover{
-    background-color: transparent;
-    color: #ffc107!important;
-    border-color: #222!important;
-  }
+    .nav-piatti nav ul li a:hover {
+      background-color: transparent;
+      color: #ffc107 !important;
+      border-color: #222 !important;
+    }
 }
-  
-/*soluzione tablet menu verticale*/
-
-
-/*-----------------------------------------------------------------*/
 
 
 /* MOBILE (≤ 768px) */
@@ -1137,7 +1181,7 @@ and (orientation: portrait) {
 
   .hero-menu {
     background-position: 126px 237px;
-    height: 640px;
+    height: 300px;
   }
 
   .hero-menu p {
@@ -1208,7 +1252,7 @@ and (orientation: portrait) {
 
 .hero-menu{
     background-position: 17px 237px;
-    height: 626px;  
+    height: 300px;  
 }
 
 .pizza-illustrazione img{
