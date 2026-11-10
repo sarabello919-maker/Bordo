@@ -925,7 +925,7 @@ main{
 /*---------------------------------------------------------------------------------*/
 
 
-/* SOLUZIONE DEFINITIVA TABLET ORIZZONTALE (Landscape) */
+/*TABLET ORIZZONTALE (Landscape) */
 @media screen 
   and (orientation: landscape)
   and (pointer: coarse)
@@ -960,7 +960,16 @@ main{
     margin: 0 !important;
   }
 
-  /* I tuoi stili grafici originali per l'orizzontale */
+
+
+    .foto-pizza-sezione {
+            height: auto !important;
+            aspect-ratio: 4 / 3 !important;
+            max-width: 100% !important;
+    }
+
+
+
   .pizza-banner {
     height: 380px !important;      
     margin-top: 40px !important;   
