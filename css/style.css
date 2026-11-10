@@ -865,7 +865,8 @@ main{
 /*---------------------------------------------------------------------------------------------------------*/
 
 
-/* TABLET E MOBILE (≤ 991.98px) - Mostra l'hamburger su smartphone e tablet */
+/* TABLET (≤ 991px)*/
+
 @media (max-width: 991.98px) {
 
   .hero-menu {
@@ -875,24 +876,26 @@ main{
 
   .hero img{
      width: 350px;
+    
   }
  
   .titoli h1{
     font-size: 40px;
-  }
+}
 
   .titoli h2{
    font-size: 28px;
-  }
+}
 
-  .pizza-banner {
+.pizza-banner {
         height: 380px !important;      
         margin-top: 40px !important;   
-  }
+}
 
-  .nav-piatti{
-    margin-top: -455px;
-  }
+
+.nav-piatti{
+  margin-top: -455px;
+}
 
   .nav-piatti ul {
     gap: 25px;
@@ -901,86 +904,45 @@ main{
   .nav-piatti a {
     font-size: 20px;
   }
-   
-  .row.py-4.g-5 {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-  }
-
-  .row.py-4.g-5 > div {
-    flex: 0 0 50% !important;
-    max-width: 50% !important;
-  }
-
-  /* --- GESTIONE HEADER E HAMBURGER PER TABLET E MOBILE --- */
-  header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 25px 20px;
-  }
-
-  /* Mostra il bottone hamburger su tablet e mobile */
-  .hamburger {
-    display: block !important;
-  }
-
-  /* Nasconde il menu di default finché non viene aperto */
-  #nav {
-    display: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Quando clicchi l'hamburger, si apre */
-  #nav.active {
-    display: block !important;
-  }
-
-  /* Disposizione verticale dei link nel menu a tendina dell'hamburger */
-  #nav ul {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 15px !important;
-    padding: 15px 0 !important;
-    margin: 0 !important;
-  }
-
-  .nav-piatti {
-    width: 100% !important;
-    display: block !important;
-  }
-
-  .nav-piatti ul {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 12px !important;
-    padding: 10px 0 10px 25px !important;
-    margin: 0 !important;
-  }
-
-  .nav-piatti a {
-    font-size: 20px !important;
-    white-space: nowrap;
-  }
 
   
-  .row.py-4.g-5 {
-    display: flex !important;
-    flex-direction: column !important; 
-  }
-
-  .row.py-4.g-5 > div {
-    flex: 0 0 100% !important;
-    max-width: 100% !important; 
-    width: 100% !important;
-  }
+.row.py-4.g-5 {
+  display: flex !important;
+  flex-wrap: nowrap !important;
 }
 
-/* --- SOLO TABLET VERTICALE (Portrait) - FIX APERTURA DROPDOWN E SPAZI --- */
+.row.py-4.g-5 > div {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+}
+
+}
+
+  @media screen 
+  and (orientation: landscape)
+  and (pointer: coarse)
+  and (hover: none)
+  and (min-width: 768px)
+  and (max-height: 1100px) {
+
+.pizza-banner {
+        height: 380px !important;      /* Un'altezza media per non schiacciarla ma farla entrare bene nello schermo orizzontale */
+        margin-top: 40px !important;   /* Spazio dal testo ridotto proporzionalmente */
+    }
+
+.hero-menu h1 {
+  font-size: 45px;
+}
+
+.hero-menu p {
+  font-size: 18px;
+}
+
+}
+
+/*soluzione tablet orizzontale*/
+
+
 @media screen 
 and (min-width: 768px)
 and (max-width: 991.98px)
@@ -988,130 +950,88 @@ and (orientation: portrait) {
 
     header {
       padding: 20px 25px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
     }
 
     .logo img {
       width: 150px;
     }
 
-    .titoli h1 {
-      font-size: 30px;
-      padding: 0 10px;
-    }
+  .titoli h1 {
+    font-size: 30px;
+    padding: 0 10px;
+  }
 
-    .titoli h2 {
-      font-size: 20px;
-    }
+  .titoli h2 {
+    font-size: 20px;
+  }
 
-    /* Se sul verticale usi già l'hamburger, assicurati che il menu si comporti bene */
-    .hamburger {
-      display: block !important;
-    }
 
-    #nav {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #111;
-      padding: 15px 0;
-      box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-      z-index: 999;
-    }
-
-    #nav.active {
-      display: block !important;
-    }
-
-    /* BLOCCA L'APERTURA AUTOMATICA DEL DROPDOWN INTERNO SUL VERTICALE */
-    #nav .dropdown-menu {
-      display: none !important;
-    }
-
-    #nav #dropdown-toggle:checked ~ .dropdown-menu {
-      display: block !important;
-    }
-
-    #nav ul {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      gap: 12px !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      list-style: none !important;
-    }
-
-    #nav ul li a, 
-    #nav .dropdown-btn {
-      padding: 6px 12px !important;
-      margin: 0 !important;
-      display: inline-block !important;
-    }
-
-    /* Forza la foto sotto il testo anche in verticale */
-    .row.py-4.g-5 {
-      display: flex !important;
-      flex-direction: column !important;
-    }
-
-    .row.py-4.g-5 > div {
-      flex: 0 0 100% !important;
-      max-width: 100% !important;
-      width: 100% !important;
-    }
-
-    .pizza-banner {
-        height: 460px !important;      
-        margin-top: 50px !important;   
-    }
-   
-    .hero-menu p {
-      padding: 0px 20px !important;
-      font-size: 20px !important;
-    }
-
-    .nav-piatti {
+  header nav ul {
       display: flex;
-      justify-content: center;
-      width: 100%;
-      margin-top: -420px;
-      padding-left: 0px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+      flex-wrap: nowrap;
     }
 
-    .nav-piatti nav ul {
+  header nav li {
+      white-space: nowrap;
+    }
+
+  header nav li a {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .pizza-banner {
+        height: 460px !important;      /* Altezza bilanciata per il tablet verticale */
+        margin-top: 50px !important;   /* Spazio dal testo calibrato */
+    }
+ 
+  .hero-menu p{
+    padding: 0px 20px !important;
+    font-size: 20px !important;
+  }
+
+  .nav-piatti {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -420px;
+    padding-left: 0px;
+  }
+
+  .nav-piatti nav ul {
       display: grid;
       grid-template-columns: repeat(3, auto);
       gap: 12px 16px;
       padding: 0;
       margin: 0;
       justify-content: center;
-    }
+  }
 
-    .nav-piatti nav ul li a {
-      display: block;
-      text-align: center;
-      padding: 8px 18px;
-      border: 2px solid #222 !important;
-      background-color: #222;
-      border-radius: 50px;
-      color: #fff !important;
-      font-weight: 600;
-      text-decoration: none;
-      white-space: nowrap;
-    }
+  .nav-piatti nav ul li a{
+    display: block;
+    text-align: center;
+    padding: 8px 18px;
+    border: 2px solid #222!important;
+    background-color: #222;
+    border-radius: 50px;
+    color: #fff!important;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+  }
 
-    .nav-piatti nav ul li a:hover {
-      background-color: transparent;
-      color: #ffc107 !important;
-      border-color: #222 !important;
-    }
+  .nav-piatti nav ul li a:hover{
+    background-color: transparent;
+    color: #ffc107!important;
+    border-color: #222!important;
+  }
 }
+  
+/*soluzione tablet menu verticale*/
 
 
 /*-----------------------------------------------------------------*/
