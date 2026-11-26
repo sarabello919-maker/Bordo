@@ -716,10 +716,22 @@ footer hr{
     position: fixed;
     bottom: 40px;
     right: 10px;
+    z-index: 999;
+}
+
+
+.tornasu a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color:#fc3;
 }
 
 .tornasu i{
-    color: #fc3;
+    color: #111;
 }
 
 
